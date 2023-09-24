@@ -1,0 +1,102 @@
+.inner{
+  width: 1300px;
+  min-width: 350px;
+  margin: auto;
+}
+.HeaderTop{
+  display: flex; justify-content: space-between;
+  align-items: center;
+}
+.HeaderTop .logo{
+  background: url(../images/logo.png);
+  width: 314px;
+  height: 58px;
+  display: inline-block;
+}
+form input{
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid  #000;
+  padding: 0.8rem 0.2rem;
+}
+form i{
+  position: relative;
+  right:1.5rem;
+  top: 0;
+  cursor: pointer;
+  color: rgb(115, 115, 115);
+}
+input::placeholder{
+  font-family: 'Pretendard';
+  font-size: 0.9rem;
+}
+
+.HeaderTop .snb ul{
+  display: flex;
+}
+.HeaderTop .snb ul li:first-child{
+  border-right: 1px solid rgb(115, 115, 115);
+  padding-right: 1rem;
+}
+.HeaderTop .snb ul li{
+  margin: 0 0.5rem; cursor: pointer;
+
+}
+.HeaderTop .snb ul li a{
+  position: relative;
+
+}
+.HeaderTop .snb ul li a.active::after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 8px;
+    bottom: -10px;
+    position: absolute;
+    left: 50%;
+    background-color: rgb(31, 31, 31);
+    transform: translateX(-50%);
+}
+.gnb{padding: 2rem;}
+.gnb a{
+  color: #aaa;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+  margin-right: 1.5rem;
+  font-weight: 300;
+}
+/* active클래스 추가 */
+.gnb a.active{color:#000; font-weight: 500;}
+.gnb a.active::after{
+  position: absolute;
+  content: '.';
+  font-size: 1.8rem;
+  left: 50%;
+  bottom:-1rem;
+  transform: translateX(-50%);
+}
+/* 미디어 쿼리 */
+/* desktop */
+@media screen and (max-width:1024px) {
+  .inner{width: 1300px;}
+}
+/* tablet */
+@media screen and (max-width:1023px) {
+  .inner{width: 100%;}
+  .HeaderTop{flex-direction: column; gap: 1rem; margin: 1rem 0;}
+  .HeaderTop .logo{
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover; display: inline-block; transform: scale(0.8);}
+  form input{ border: none; border-bottom: 1px solid  #000; padding: 0.8rem 0.2rem;}
+  .HeaderTop .snb ul{display: flex;}
+  .gnb{display: flex; justify-content: space-between;
+  text-align: center;}
+  .gnb a{ color: #aaa; font-size: 3vw; position: relative; font-weight: 300;}
+  .gnb.inner{padding: 2rem 0.5rem;}
+  .gnb.inner a{margin: 0;}
+}
+/* mobile */
+@media screen and (max-width:540px) {
+  .inner{width: 100%;}
+}

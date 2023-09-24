@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+:root{
+  font-size: 15px;
+  font-family: 'Pretendard';
+}
+.productWarp ul.productList{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+.productWarp ul.productList li{width: 100%;}
+.productWarp ul.productList li{
+  transition: 0.2s; width: 100%;
+}
+.productWarp ul.productList li:hover{ 
+  transform: scale(1.08); box-shadow: 0px 0px 10px rgba(119, 119, 119, 0.293);
+}
+.List img{width: 100%;}
+.List p{margin-left: 0.8em; font-weight: 500;}
+.List h2{margin: 0.5rem 0.8rem; }
+.List h3{margin-left:0.8rem; }
+.List span{
+  margin-left:0.8rem; background-color: aliceblue; padding: 0.1rem 0.5rem;
+  font-size: 0.7em; color: #3b3a3a;
+  font-weight: 500;}
+/* desktop */
+@media screen and (max-width: 1024px){
+  .productWarp ul.productList{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* tablet*/
+@media screen and (max-width: 1023px){
+  .productWarp ul.productList{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* mobile*/
+@media screen and (max-width: 540px){
+  .productWarp ul.productList{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
