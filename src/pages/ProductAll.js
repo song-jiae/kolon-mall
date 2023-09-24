@@ -9,7 +9,7 @@ const ProductAll = () => {
   const getProduct = async () =>{
     let keyword = query.get('q') || '';
     console.log('쿼리값', keyword);
-    let url = `https://my-json-server.typicode.com/song-jiae/kolon-mall?q=${keyword}`;
+    let url = `https://my-json-server.typicode.com/song-jiae/kolon-mall/products?q=${keyword}`;
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);
