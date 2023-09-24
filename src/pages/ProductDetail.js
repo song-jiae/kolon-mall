@@ -12,7 +12,7 @@ const ProductAll = () => {
     try {
       let keyword = query.get('q') || '';
       console.log('쿼리값', keyword);
-      let url = `https://my-json-server.typicode.com/song-jiae/kolon-mall?q=${keyword}`;
+      let url = `https://my-json-server.typicode.com/song-jiae/kolon-mall/productsq=${keyword}`;
       let response = await fetch(url);
       let data = await response.json();
       setProductList(data);
