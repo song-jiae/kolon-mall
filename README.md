@@ -1,4 +1,3 @@
-url 
 https://kolon-mall.netlify.app
 
 # Getting Started with Create React App
