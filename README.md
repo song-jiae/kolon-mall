@@ -5,6 +5,12 @@
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;">  </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #c9d1d9;">  </div> 
     </div>
+    # 한국화학연구소 리뉴얼 - 🐬개인프로젝트🦈
+
+    ## 작업자 : 송지애
+    
+    ## 제작 기간: 20일 (2024.01.01 ~ 2024.01.24)
+    <img src="https://github.com/song-jiae/portfolisource/blob/main/video01.mp4">
     <div align= "center">
     <h2 style="border-bottom: 1px solid #21262d; color: #c9d1d9;"> 🛠️ Tech Stacks </h2> <br> 
     <div style="margin: 0 auto; text-align: center;" align= "center"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=plastic&logo=CSS3&logoColor=white">
